@@ -3,6 +3,7 @@ import { createClient } from '@/lib/supabase/server'
 import { ArrowRight, Send, Shield, CheckCircle } from 'lucide-react'
 import Navbar from '@/components/Navbar'
 import CampaignCard from '@/components/CampaignCard'
+import HeroProducts from '@/components/HeroProducts'
 
 export default async function HomePage() {
   const supabase = await createClient()
@@ -56,50 +57,7 @@ export default async function HomePage() {
             </div>
 
             {/* CENTER — Products */}
-            <div className="hidden lg:flex lg:col-span-5 items-end justify-center relative overflow-hidden">
-              {/* Yellow blob */}
-              <div className="absolute top-4 right-4 w-56 h-56 bg-[#FFBE00] rounded-full" style={{filter: 'blur(2px)', opacity: 0.9}} />
-              {/* Floating avatars */}
-              <img src="https://i.pravatar.cc/40?img=20" alt="" className="absolute top-6 left-20 w-10 h-10 rounded-full border-2 border-white object-cover shadow-lg z-20" />
-              <img src="https://i.pravatar.cc/40?img=21" alt="" className="absolute top-8 right-16 w-10 h-10 rounded-full border-2 border-white object-cover shadow-lg z-20" />
-              <img src="https://i.pravatar.cc/40?img=22" alt="" className="absolute top-1/3 left-6 w-9 h-9 rounded-full border-2 border-white object-cover shadow-lg z-20" />
-              <img src="https://i.pravatar.cc/40?img=23" alt="" className="absolute bottom-4 right-4 w-9 h-9 rounded-full border-2 border-white object-cover shadow-lg z-20" />
-              {/* Products arranged like in design */}
-              <div className="relative z-10 flex items-end pb-0 h-full w-full justify-center">
-                {/* iPhone - tall, left */}
-                <img
-                  src="https://www.gsmarena.com/imgroot/news/23/09/iphone-15-official/phoneArena/-1200x630/Apple-iPhone-15-lineup-purple.jpg"
-                  alt="iPhone 15"
-                  className="h-64 object-contain drop-shadow-2xl z-10 -mr-4"
-                  style={{filter: 'drop-shadow(0 20px 30px rgba(0,0,0,0.5))'}}
-                  onError={(e: any) => e.target.style.display='none'}
-                />
-                {/* Whey - center, tallest */}
-                <img
-                  src="https://www.myprotein.ro/contentassets/ad59de26bf0446679f1d843143f82c34/impact-whey-protein-1kg.png"
-                  alt="Whey"
-                  className="h-72 object-contain drop-shadow-2xl z-20"
-                  style={{filter: 'drop-shadow(0 20px 30px rgba(0,0,0,0.5))'}}
-                  onError={(e: any) => e.target.style.display='none'}
-                />
-                {/* Nike - bottom center */}
-                <img
-                  src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/99486859-0ff3-46b4-949b-2d16af2ad421/air-max-sc-shoes-kLBMHT.png"
-                  alt="Nike"
-                  className="h-32 object-contain drop-shadow-2xl z-30 -mb-2 -ml-4"
-                  style={{filter: 'drop-shadow(0 10px 20px rgba(0,0,0,0.5))'}}
-                  onError={(e: any) => e.target.style.display='none'}
-                />
-                {/* Airfryer - right */}
-                <img
-                  src="https://www.philips.com/c-dam/b2c/master/experience/ho/oven/airfryer-xxl/hd9860-91/hd9860-91-product-image-front-facing.png"
-                  alt="Airfryer"
-                  className="h-56 object-contain drop-shadow-2xl z-10 -ml-6"
-                  style={{filter: 'drop-shadow(0 20px 30px rgba(0,0,0,0.5))'}}
-                  onError={(e: any) => e.target.style.display='none'}
-                />
-              </div>
-            </div>
+            <HeroProducts />
 
             {/* RIGHT — Stats card WHITE */}
             <div className="lg:col-span-3 flex items-center justify-end py-8 lg:py-12">
