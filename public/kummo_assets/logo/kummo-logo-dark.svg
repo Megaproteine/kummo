@@ -1,0 +1,8 @@
+<svg width="520" height="120" viewBox="0 0 520 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M20 64L62 22H96V56L54 98C48 104 38 104 32 98L20 86C14 80 14 70 20 64Z" stroke="#FFC928" stroke-width="7" stroke-linejoin="round"/>
+  <circle cx="83" cy="39" r="6" stroke="#FFC928" stroke-width="6"/>
+  <path d="M37 70C45 81 60 81 68 70" stroke="#FFC928" stroke-width="6" stroke-linecap="round"/>
+  <text x="125" y="58" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="800" letter-spacing="12" fill="#FFFFFF">KUMMO</text>
+  <text x="128" y="87" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="600" fill="#FFC928">comunitatea</text>
+  <text x="232" y="87" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="500" fill="#FFFFFF">care negociază</text>
+</svg>
