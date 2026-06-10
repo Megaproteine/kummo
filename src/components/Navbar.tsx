@@ -21,10 +21,10 @@ export default function Navbar() {
             {/* Text */}
             <div className="flex flex-col leading-none">
               <span className="text-[#071426] font-black tracking-[0.18em] text-3xl leading-none">KUMMO</span>
-              <span className="text-xs font-medium tracking-widest leading-none mt-1">
+              <div className="flex justify-between mt-1" style={{fontSize: '11px', fontWeight: 500, letterSpacing: '0.04em'}}>
                 <span className="text-[#FFC928] font-semibold">comunitatea</span>
-                <span className="text-[#071426]"> care negociază</span>
-              </span>
+                <span className="text-[#071426]">care negociază</span>
+              </div>
             </div>
           </Link>
 
