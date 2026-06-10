@@ -246,7 +246,7 @@ export default async function HomePage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
             <div>
               <div className="mb-4">
-                <Image src="/kummo_assets/logo/kummo-logo.svg" alt="KUMMO" width={120} height={28} />
+                <img src="/kummo_assets/logo/kummo-logo.svg" alt="KUMMO" style={{height: '36px', width: 'auto'}} />
               </div>
               <div className="flex gap-2">
                 {[
